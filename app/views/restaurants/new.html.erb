@@ -37,15 +37,20 @@
 
   <div>
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.text_area :description, :rows => 4, :cols => 50  %>
   </div>
 
-  <div>
-    <%= f.label :category %>
-    <%= f.text_field :category %>
-  </div>
+</br>
+
+<div>
+  <%= f.label :category %>
+  <%= f.select :category, ['Thai','Chinese','Japanese','Indian','Pakistani', 'American', 'Italian', 'French', 'Irish', 'German', 'Polish', 'Russian', 'Cuban', 'Mexican', 'Latin', 'Fusion', 'Cajun'] %>
+</div>
+
+</br>
 
    <%= f.submit 'Submit' %>
 <% end %>
+<hr>
 
 <%= link_to 'Back', :back %>
