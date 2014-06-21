@@ -2,7 +2,7 @@
 
   <ul>
   <% @restaurants.each do |restaurant| %>
-      <li><%= "#{restaurant.name}" %></li>
+      <li><%= link_to restaurant.name, restaurant_path(restaurant) %>, <%= "#{restaurant.city} (#{restaurant.state})" %></li>
   <% end %>
   </ul>
 
