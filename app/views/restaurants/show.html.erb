@@ -9,27 +9,10 @@
   <li>Category: <%= @restaurant.category %></li>
 </ul>
 
-<h3>Add A Review</h3>
 
-<%= form_for([@restaurant, @restaurant.reviews.build]) do |f| %>
+<%= link_to "Add a Review", new_restaurant_review_path(@restaurant, @review), :class => "button"  %>
 
-<div>
-  <%= f.label :rating %>
-  <%= f.select :rating, ['1','2','3','4','5'] %>
-</div>
-</br>
-
-<div>
-  <%= f.label :body %>
-  <%= f.text_area :body, :rows => 4, :cols => 50 %>
-</div>
-</br>
-
-
-<%= f.submit 'Submit' %>
-<% end %>
-<hr>
-
+<h3>Customer Reviews</h3>
 
 <ul>
 
