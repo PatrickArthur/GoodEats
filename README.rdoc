@@ -1,28 +1,4 @@
-== README
+Launch Academy Systems Check
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Objective: To create an application that allows a user to input Restaurants as well as whe they visit the Restaurants page,
+be able to add a review. When a user goes to the root, they will see the most rescent 10 resturants added to the application.
