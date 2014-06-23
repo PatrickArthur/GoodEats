@@ -19,7 +19,7 @@
 <% @restaurant.reviews.each do |review| %>
 <li>Rating:<%= review.rating %></li>
 <li>Review: <%= review.body %></li>
-<li>Date: <%= review.created_at %></li>
+<li>Date: <%= time_ago_in_words(review.created_at) %></li>
 
 </br>
 <hr>
